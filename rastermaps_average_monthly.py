@@ -165,8 +165,8 @@ for prefix in prefixes:
                     # Calculate the average precipitation in mm
                     value_mm = np.sum(valid_data)
                     
-                    cell_area = affine[0] * -affine[4]
-                    total_precipitation = np.sum(out_image[out_image > 0]) * cell_area
+                    # cell_area = affine[0] * -affine[4]
+                    total_precipitation = np.sum(out_image[out_image > 0])  # * cell_area #Check if y ou need to multiply with the cell area
                     print(total_precipitation)
                     
                     # Append the result to the list
