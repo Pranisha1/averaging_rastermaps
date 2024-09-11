@@ -16,7 +16,7 @@ from rasterio.mask import mask
 input_dir = 'C:/Users/pokhr002/OneDrive - Universiteit Utrecht/03Model/04_final_calib/results/'
 forcing_dir = 'C:\\SPHY_input\\forcing\\'
 output_dir = 'C:\\Users\\pokhr002\\OneDrive - Universiteit Utrecht\\06Programming\\01Python\\06_waterbalance\\output_data\\'
-output_dir_maps = 'C:\\Users\\pokhr002\\OneDrive - Universiteit Utrecht\\06Programming\\01Python\\06_waterbalance\\output_data\\maps\\'
+output_dir_maps = 'C:\\Users\\pokhr002\\OneDrive - Universiteit Utrecht\\06Programming\\01Python\\06_waterbalance\\output_data\\maps\\monthly\\'
 catchment_shapefile = "C:\\Users\\pokhr002\\OneDrive - Universiteit Utrecht\\01GIS\\Main_map\\Karnali_basin.shp"  
 catchment_data = gpd.read_file(catchment_shapefile)
 basin_area_m2 = catchment_data.geometry.area.sum()
